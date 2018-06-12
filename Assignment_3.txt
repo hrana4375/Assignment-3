@@ -1,0 +1,150 @@
+Q1 - Pattern
+Sol-
+class Pattern {
+  public static void main(String args[]) {
+    for(int i=0;i<5;i++)
+      {
+        for(int j=5;j>i;j--)
+        {
+          System.out.print("*");
+        }
+
+            System.out.println();
+
+      }
+  }
+}
+
+Q2 - Find even no. upto N
+Sol-
+import java.util.Scanner;
+class Even {
+  public static void main(String args[]) {
+    Scanner ob=new Scanner(System.in);
+    System.out.print("Enter the number= ");
+
+    int n=ob.nextInt();
+    System.out.println("Even numbers upto "+n+" are");
+    for(int i=0;i<=n;i++)
+      {
+        if(i%2==0)
+          System.out.print(i+" ");
+      }
+
+  }
+}
+Q3 - Find Prime numbers upto N
+Sol-
+import java.util.Scanner;
+class Prime {
+  public static void main(String args[]) {
+    int flag;
+    Scanner ob=new Scanner(System.in);
+    System.out.print("Enter the number= ");
+
+    int n=ob.nextInt();
+
+    System.out.println("List of Prime numbers is:");
+    for(int i=2;i<=n;i++)
+      {
+        flag=0;
+        for(int j=2;j<=i/2;j++)
+          {
+            if(i%j==0)
+            {
+              flag=1;
+              break;
+            }
+          }
+        if(flag==0)
+        System.out.print(i+" ");
+      }
+    }
+}
+
+Q4 - Armstrong
+Sol-
+import java.util.Scanner;
+  class Armstrong {
+    public static void main(String args[])
+      {
+        int temp,sum=0,rem;
+        Scanner ob=new Scanner(System.in);
+        System.out.print("Enter the number= ");
+        int n=ob.nextInt();
+        temp=n;
+        while(temp!=0)
+        {
+          rem=temp%10;
+          sum=sum+(rem*rem*rem);
+          temp=temp/10;
+        }
+        if(sum==n)
+          System.out.println(n+" is an Armstrong number");
+        else
+          System.out.println(n+" is not an Armstrong number");
+      }
+  }
+Q5 -import java.util.Scanner;
+class Reverse {
+  public static void main(String args[]) {
+    int temp,sum=0;
+    Scanner ob=new Scanner(System.in);
+    System.out.print("Enter the number= ");
+    int n=ob.nextInt();
+    temp=n;
+    for( ;temp!=0; )
+    {
+      sum=sum*10+temp%10;
+      temp=temp/10;
+    }
+    System.out.println("The Reverse of "+n+" is "+sum);
+  }
+}
+Q6 -Sort Array
+Sol-
+class Sort {
+  public static void main(String args[])
+    {
+      int arr[]={1,1,1,1,0,0,1,0},temp,i=0;
+          for(int j=0;j<arr.length;j++)
+          {
+            if(arr[j]==0)
+            {
+              temp=arr[i];
+              arr[i]=arr[j];
+              arr[j]=temp;
+              i++;
+            }
+          }
+          System.out.println("The Sorted array is");
+          for(int k=0;k<arr.length;k++)
+          {
+            System.out.print(arr[k]+" ");
+          }
+    }
+}
+Q7 - Search element in Array
+Sol-
+class Sort {
+  public static void main(String args[])
+    {
+      int arr[]={1,1,1,1,0,0,1,0},temp,i=0;
+          for(int j=0;j<arr.length;j++)
+          {
+            if(arr[j]==0)
+            {
+              temp=arr[i];
+              arr[i]=arr[j];
+              arr[j]=temp;
+              i++;
+            }
+          }
+          System.out.println("The Sorted array is");
+          for(int k=0;k<arr.length;k++)
+          {
+            System.out.print(arr[k]+" ");
+          }
+    }
+}
+
